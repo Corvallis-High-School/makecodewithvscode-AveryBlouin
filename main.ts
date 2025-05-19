@@ -21,7 +21,8 @@ function showSprite (mySprite: Sprite) {
 /*
  * Event handlers
  */
-controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+// changed button to b
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     showSprite(sprites.create(list._pickRandom(), SpriteKind.Player))
 })
 
